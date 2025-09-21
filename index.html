@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium fashion and accessories at Your Majesty's Fashion. Quality clothing, fast shipping, and exceptional customer service.">
+    <title>Your Majesty's Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Your Majesty's Fashion</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <input type="text" class="search-bar" placeholder="Search products..." id="searchInput">
+                <button class="cart-button" id="cartBtn">
+                    🛒 Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Where Fashion Meets Royalty</h1>
+            <p>Discover the latest trends in fashion with our curated collection of premium clothing and accessories</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="women">
+                    <div class="category-image">👗</div>
+                    <div class="category-content">
+                        <h3>Women's Fashion</h3>
+                        <p>Elegant dresses, tops, and accessories</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="men">
+                    <div class="category-image">👔</div>
+                    <div class="category-content">
+                        <h3>Men's Fashion</h3>
+                        <p>Stylish shirts, suits, and accessories</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <div class="category-image">👜</div>
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Bags, jewelry, and fashion accessories</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="shoes">
+                    <div class="category-image">👠</div>
+                    <div class="category-content">
+                        <h3>Footwear</h3>
+                        <p>Premium shoes for every occasion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+                <button class="filter-btn" data-filter="shoes">Shoes</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCartBtn">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cartTotal">0.00</span></span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="notification" id="notification">
+        Item added to cart!
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Your Majesty's Fashion</h3>
+                    <p>Premium fashion and accessories for the modern lifestyle. Quality guaranteed with fast worldwide shipping.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Majesty's Fashion. All rights reserved. | Privacy Policy | Terms of Service | Designed by <a href="majestywebmagic.com">Dalilah Heyward</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
